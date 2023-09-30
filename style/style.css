@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100vh;
+}
+
+.bg-video{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    animation-name: show;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.container .header-main {
+    background: repeating-linear-gradient(white, white 2px, transparent 2px, transparent 4px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 10rem;
+    text-transform: uppercase;
+}
+
+.container .header-second{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.container svg{
+    width: 64px;
+    height: 64px;
+}
+
+
+.container svg {
+    fill: red;
+    transition: fill 0.3s ease;
+}
+
+.container svg:hover {
+
+    fill: #c2e633;
+}
+
+.icon-flex{
+    display: flex;
+    flex-direction: column;
+}
